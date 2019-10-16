@@ -35,7 +35,8 @@ Mypets is a simple social network and e-commerce for pet shops.
      This start the development server to listen our requests in specified ip and port (localhost:8000 by default).
      
 ## Usage
-Open your REST client. We recommend Insomnia, but feel free to choose yours. Send requests as per [API specification](https://github.com/davidsonbrsilva/mypets/wiki/Api) to retrieve data in JSON format.
+- Open your REST client. We recommend Insomnia, but feel free to choose yours.
+- Send requests as per [API specification](https://github.com/davidsonbrsilva/mypets/wiki/Api) to retrieve data in JSON format.
 
 ## Support
 Send an email to <davidsonbruno@outlook.com>.
