@@ -4,10 +4,10 @@ Mypets is a simple social network and e-commerce for pet shops.
 ## Pre-requisites
 
 ### Technologies
-- PHP version 7.0.0 or above. Checked with version 7.3.7;
-- A Database Management System (DMS). We used MySQL by default;
-- Composer Package Manager (we used version 1.9.0);
-- REST client to test API routes (we recommend Insomnia);
+- [PHP](https://www.php.net/downloads.php) version 7.0.0 or above. Checked with [version 7.3.7](https://www.php.net/releases/);
+- A Database Management System (DMS). We used [MySQL](https://dev.mysql.com/downloads/installer/) by default;
+- [Composer](https://getcomposer.org/download/) Package Manager (we used version 1.9.0);
+- REST client to test API routes (we recommend [Insomnia](https://insomnia.rest/download/));
 
 ### Setup
 - Create a empty database called `mypets` through your DMS;
@@ -44,4 +44,4 @@ Send an email to <davidsonbruno@outlook.com>.
 - We intend create the visual concept of this app soon.
 
 ## License
-This project is guarded by MIT License.
+This project is guarded by [MIT License](LICENSE.md).
