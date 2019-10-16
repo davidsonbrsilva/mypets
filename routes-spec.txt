@@ -1,0 +1,71 @@
+-   GET	        users
+-   POST	    users
++   GET	        @{username}
+-   PUT	        @{username}
+-   DELETE	    @{username}
++   GET	        @{username}/animals
+-   GET	        @{username}/orders
+-   GET         @{username}/orders/accepted
+---
+-   GET	        animals
+-   POST	    animals
++   GET	        +{animal}
+-   PUT	        +{animal}
+-   DELETE	    +{animal}
++   GET	        +{animal}/owners
+-   GET	        +{animal}/orders
+---
+-   GET	        animals/bleeds
+-   POST	    animals/bleeds
++   GET         animals/bleeds/{id}
+-   PUT	        animals/bleeds/{id}
+-   DELETE	    animals/bleeds/{id}
+---
+-   GET	        animals/types
+-   POST	    animals/types
++   GET         animals/types/{id}
+-   PUT	        animals/types/{id}
+-   DELETE	    animals/types/{id}
+---
+-   GET	        orders
+-   POST	    orders
+-   GET         orders/{id}
+-   PUT	        orders/{id}
+-   DELETE	    orders/{id}
+---
+-   GET	        services
+-   POST	    services
++   GET         services/{id}
+-   PUT	        services/{id}
+-   DELETE	    services/{id}
+---
+-   GET	        status
+-   POST	    status
+-   GET         status/{id}
+-   PUT	        status/{id}
+-   DELETE	    status/{id}
+
+Examples:
+https://mypets.com/api/@davidsonbrsilva
+https://mypets.com/api/@davidsonbrsilva/animals
+https://mypets.com/api/@davidsonbrsilva/orders
+---
+https://mypets.com/api/:kadu/
+https://mypets.com/api/:kadu/owners
+https://mypets.com/api/:kadu/orders
+---
+https://mypets.com/api/users
+https://mypets.com/api/animals
+https://mypets.com/api/animals/bleeds
+https://mypets.com/api/animals/bleeds/1
+https://mypets.com/api/animals/types
+https://mypets.com/api/animals/types/1
+https://mypets.com/api/orders
+https://mypets.com/api/orders/1
+
+App name suggestions:
+Patadas     conotação negativa
+Petbu       conotação restritiva
+Miau        conotação restritiva
+Petcare     amplamente utilizado
+Mypets      disponível
