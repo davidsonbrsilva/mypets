@@ -15,24 +15,28 @@ Mypets is a simple social network and e-commerce for pet shops.
 ## Installation
 - Clone this repository;
 - Browse to the project root folder;
-- Open the `.env` file in your text editor to input your database configurations. The default values are:
+- Duplicate the `.env.example` file and rename it to `.env`; 
+- Open the `.env` file in your text editor to input your database configuration. The default values are:
 
   ```
   DB_CONNECTION: mysql
   DB_USERNAME: root
-  DB_PASSWORD: 123456
+  DB_PASSWORD: 
   ```
   
 - Open your terminal in root folder and type the follow commands:
 
+  - `php artisan key:generate`.  
+     This generates a key for the application;
+
   - `php artisan migrate`.  
-     This creates the project tables in database);
+     This creates the project tables in database;
      
   - `php artisan db:seed` (optional).  
      This creates random data to feed the database.
      
   - `php artisan serve`.  
-     This start the development server to listen our requests in specified ip and port (localhost:8000 by default).
+     This starts the development server to listen our requests in specified ip and port (localhost:8000 by default).
      
 ## Usage
 - Open your REST client. We recommend Insomnia, but feel free to choose yours.
