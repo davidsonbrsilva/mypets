@@ -23,11 +23,11 @@ class UsersTableSeeder extends Seeder
 
         User::create([
             'username' => 'admin',
-            'name' => 'Davidson',
-            'last_name' => 'Bruno',
-            'email' => 'davidsonbruno@outlook.com',
+            'name' => 'Admin',
+            'last_name' => '',
+            'email' => 'admin@my.pets',
             'password' => $password,
-            'birthday' => '1996-09-14',
+            'birthday' => '1980-01-01',
             'address' => $faker->numberBetween(1, Address::count()),
             'phone' => $faker->phoneNumber,
             'is_admin' => true,
