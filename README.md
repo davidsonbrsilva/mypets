@@ -26,6 +26,12 @@ Mypets is a simple social network and e-commerce for pet shops.
   
 - Open your terminal in root folder and type the follow commands:
 
+  - `composer install`.  
+     This install all dependecies of the application;
+     
+  - `composer dump-autoload`.  
+     This loading the autoload of the application;
+
   - `php artisan key:generate`.  
      This generates a key for the application;
 
