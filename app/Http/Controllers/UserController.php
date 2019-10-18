@@ -24,7 +24,7 @@ class UserController extends Controller
 
     public function show($username)
     {
-        $user = User::with('address')->where('username', '=', $username)->firstOrFail();
+        $user = User::with('address')->where('username', '=', $username)->first();
 
         if(!$user) {
             throw new ModelNotFoundException('User not found');
@@ -35,7 +35,7 @@ class UserController extends Controller
 
     public function showAnimals($username)
     {
-        $user = User::with('animals.type', 'animals.bleed')->where('username', '=', $username)->firstOrFail();
+        $user = User::with('animals.type', 'animals.bleed')->where('username', '=', $username)->first();
 
         if(!$user) {
             throw new ModelNotFoundException('User not found');
@@ -46,7 +46,7 @@ class UserController extends Controller
 
     public function showRequestedOrders($username)
     {
-        $user = User::with('address','requestedOrders')->where('username', '=', $username)->firstOrFail();
+        $user = User::with('address','requestedOrders')->where('username', '=', $username)->first();
 
         if(!$user) {
             throw new ModelNotFoundException('User not found');
@@ -57,7 +57,7 @@ class UserController extends Controller
 
     public function showAcceptedOrders($username)
     {
-        $user = User::with('address','acceptedOrders')->where('username', '=', $username)->firstOrFail();
+        $user = User::with('address','acceptedOrders')->where('username', '=', $username)->first();
 
         if(!$user) {
             throw new ModelNotFoundException('User not found');
@@ -68,10 +68,10 @@ class UserController extends Controller
 
     public function update(Request $request, $username)
     {
-        $user = User::where('username', '=', $username)->firstOrFail();
+        $user = User::where('username', '=', $username)->first();
 
         if(!$user) {
-            throw new ModelNotFoundException('Animal bleed not found');
+            throw new ModelNotFoundException('User not found');
         }
 
         $user->fill($request->all());
@@ -82,10 +82,10 @@ class UserController extends Controller
 
     public function destroy($username)
     {
-        $user = User::where('username', '=', $username)->firstOrFail();
+        $user = User::where('username', '=', $username)->first();
 
         if(!$user) {
-            throw new ModelNotFoundException('Animal bleed not found');
+            throw new ModelNotFoundException('User not found');
         }
 
         $user->delete();

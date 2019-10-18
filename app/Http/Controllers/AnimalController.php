@@ -24,7 +24,7 @@ class AnimalController extends Controller
 
     public function show($username)
     {
-        $animal = Animal::with('type', 'bleed')->where('username', '=', $username)->firstOrFail();
+        $animal = Animal::with('type', 'bleed')->where('username', '=', $username)->first();
 
         if(!$animal) {
             throw new ModelNotFoundException('Animal not found');
@@ -35,7 +35,7 @@ class AnimalController extends Controller
 
     public function showOwners($username)
     {
-        $animal = Animal::with('type', 'bleed', 'owners')->where('username', '=', $username)->firstOrFail();
+        $animal = Animal::with('type', 'bleed', 'owners')->where('username', '=', $username)->first();
 
         if(!$animal) {
             throw new ModelNotFoundException('Animal not found');
@@ -46,7 +46,7 @@ class AnimalController extends Controller
 
     public function showOrders($username)
     {
-        $animal = Animal::with('type', 'bleed','orders')->where('username', '=', $username)->firstOrFail();
+        $animal = Animal::with('type', 'bleed','orders')->where('username', '=', $username)->first();
 
         if(!$animal) {
             throw new ModelNotFoundException('Animal not found');
@@ -57,7 +57,7 @@ class AnimalController extends Controller
 
     public function update(Request $request, $username)
     {
-        $animal = Animal::where('username', '=', $username)->firstOrFail();
+        $animal = Animal::where('username', '=', $username)->first();
 
         if(!$animal) {
             throw new ModelNotFoundException('Animal not found');
@@ -71,7 +71,7 @@ class AnimalController extends Controller
 
     public function destroy($username)
     {
-        $animal = Animal::where('username', '=', $username)->firstOrFail();
+        $animal = Animal::where('username', '=', $username)->first();
 
         if(!$animal) {
             throw new ModelNotFoundException('Animal not found');

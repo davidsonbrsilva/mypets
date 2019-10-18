@@ -16,7 +16,7 @@ class CreateAnimalBleedsTable extends Migration
         Schema::create('animal_bleeds', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name', 100);
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->timestamps();
             $table->softDeletes();
             $table->bigInteger('managed_by')->nullable()->unsigned();

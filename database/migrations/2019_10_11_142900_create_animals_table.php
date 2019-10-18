@@ -16,11 +16,11 @@ class CreateAnimalsTable extends Migration
         Schema::create('animals', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('username', 80);
-            $table->string('name', 100);
-            $table->date('birthday');
-            $table->text('bio');
-            $table->string('profile_photo', 256);
-            $table->string('cover_photo', 256);
+            $table->string('name', 100)->nullable();
+            $table->date('birthday')->nullable();
+            $table->text('bio')->nullable();
+            $table->string('profile_photo', 256)->nullable();
+            $table->string('cover_photo', 256)->nullable();
             $table->timestamps();
             $table->softDeletes();
             $table->bigInteger('animal_type')->unsigned();
