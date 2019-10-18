@@ -44,6 +44,15 @@ Mypets is a simple social network and e-commerce for pet shops.
   - `php artisan serve`.  
      This starts the development server to listen our requests in specified ip and port (localhost:8000 by default).
      
+##### Note:
+
+If you get the error
+```
+'Could not scan for classes inside "database/factories" which does not appear to be a file nor a folder'
+```
+creates 'factories' in 'database' folder.
+
+     
 ## Usage
 - Open your REST client. We recommend Insomnia, but feel free to choose yours.
 - Send requests as per [API specification](https://github.com/davidsonbrsilva/mypets/wiki/Api) to retrieve data in JSON format.
