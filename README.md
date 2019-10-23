@@ -1,4 +1,6 @@
 # Mypets
+![Status](https://img.shields.io/badge/status-active-green?style=flat-square)
+
 Mypets is a simple social network and e-commerce for pet shops.
 
 ## Pre-requisites
