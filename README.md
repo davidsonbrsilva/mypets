@@ -1,5 +1,5 @@
 # Mypets
-![Status](https://img.shields.io/badge/status-active-green?style=flat-square)
+![Status](https://img.shields.io/badge/status-discontinued-red?style=flat-square)
 
 Mypets is a simple social network and e-commerce for pet shops.
 
@@ -61,9 +61,6 @@ creates 'factories' in 'database' folder.
 
 ## Support
 Send an email to <davidsonbruno@outlook.com>.
-
-## Roadmap
-- We intend create the visual concept of this app soon.
 
 ## License
 This project is guarded by [MIT License](LICENSE.md).
